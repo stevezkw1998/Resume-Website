@@ -1,0 +1,23 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block title %}Resume page{% endblock title %}
+
+{% block content %}
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <p class="lead">Upgrade your resume right now!</p>
+  <a href="{% url 'home' %}" class="resume-btn">Homepage</a>
+</div>
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <form action="/info" method="GET">
+    <label for="name">name</label>
+    <input type="text" id="name" name="name"></br>
+    <label for="email">email</label>
+    <input type="text" id="email" name="email"></br>
+    <label for="role">role</label>
+    <input type="text" id="role" name="role"></br>
+    <input type="submit" value="Enter">
+  </form>
+</div>
+{% endblock content %}
+{{ message }}

@@ -11,6 +11,10 @@ html {
   }
 }
 
+.btn-outline-secondary {
+  background-color: white;
+}
+
 body {
   margin-bottom: 60px; /* Margin bottom by footer height */
 }
@@ -21,6 +25,11 @@ body {
 
 .pricing-header {
   max-width: 700px;
+}
+
+.header-container {
+  padding: 2rem;
+  background-image: url("../../static/images/socail_media_header.jpg");
 }
 
 .footer {
